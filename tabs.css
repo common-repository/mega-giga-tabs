@@ -1,0 +1,244 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.MGTZ_bigtab {
+    margin-top: 5em;
+    margin-bottom: 5em;
+    box-sizing: border-box !important;
+    font-size: 14px !important;
+    position: relative;
+}
+
+.MGTZ_bigtab h1,
+.MGTZ_bigtab h2,
+.MGTZ_bigtab h3,
+.MGTZ_bigtab h4,
+.MGTZ_bigtab h5,
+.MGTZ_bigtab h6 {
+    color: black !important;
+    margin: 1em 0em !important;
+}
+
+.MGTZ_tabs-block-v {
+    width: 100%;
+    height: 63.7%;
+    margin-top: 8.5em;
+}
+
+.MGTZ_tab-cont {
+    display: none;
+    border-radius: 8px;
+    color: black !important;
+    background: white;
+    height: fit-content;
+}
+
+.MGTZ_tab {
+    transition: all 0.3s;
+    cursor: pointer;
+    box-shadow: 0px 5px 30px -8px rgba(0, 0, 0, 0.18);
+    border-radius: 0.6em;
+    background: white;
+}
+
+.MGTZ_text>p {
+    line-height: 150% !important;
+}
+
+.MGTZ_text {
+    color: black !important;
+    font-weight: 400 !important;
+}
+
+.MGTZ_shadow {
+    border-radius: 8px;
+}
+
+.MGTZ_shadow>.MGTZ_img {
+    width: 3.5em;
+    margin-right: 1.5em;
+}
+
+.MGTZ_img img {
+    width: 100% !important;
+}
+
+.MGTZ_active {
+    transition: all 0.3s;
+}
+
+.MGTZ_active:hover .MGTZ_text>h2 {
+    color: black !important;
+}
+
+.MGTZ_show {
+    display: block !important;
+    animation: fadeIn .3s !important;
+    opacity: 1;
+    height: fit-content !important;
+}
+
+.MGTZ_tab:hover {
+    box-shadow: 0px 8px 30px -5px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s;
+}
+
+.MGTZ_tabs-h>.MGTZ_tab-h:not(:last-child) {
+    margin-right: 3% !important;
+}
+
+.MGTZ_tab:hover h2 {
+    color: #3DBEEE !important;
+    transition: all 0.3s;
+}
+
+.MGTZ_img {
+    position: relative;
+}
+
+.MGTZ_bigtab img:only-child {
+    opacity: 1 !important;
+    position: static !important;
+}
+
+.MGTZ_def {
+    opacity: 1;
+}
+
+.MGTZ_active .MGTZ_def {
+    position: absolute;
+    opacity: 0;
+}
+
+.MGTZ_act {
+    opacity: 1;
+}
+
+.MGTZ_def+.MGTZ_act {
+    opacity: 0
+}
+
+.MGTZ_active .MGTZ_act {
+    opacity: 1;
+}
+
+@media(min-width: 1280px) {
+
+    .MGTZ_tab {
+        width: 31%;
+    }
+
+    .MGTZ_active,
+    .MGTZ_active:hover {
+        box-shadow: 0px 5px 30px -8px rgba(0, 0, 0, 0.18), inset 5px 0px 0px #3DBEEE !important;
+    }
+
+    .MGTZ_shadow {
+        display: flex;
+        padding: 2.142em;
+    }
+
+    .MGTZ_text {
+        width: calc(100% - 5em);
+    }
+
+    .MGTZ_text>p {
+        font-size: 1em !important;
+        margin: 0em !important;
+    }
+
+    .MGTZ_text>h2 {
+        margin-top: 0em !important;
+        margin-bottom: 0.7em !important;
+        font-size: 1.25em !important;
+    }
+
+    .MGTZ_tab-cont {
+        position: absolute;
+        box-shadow: 0px 5px 30px -8px rgba(0, 0, 0, 0.18);
+        padding: 2.142em;
+    }
+
+    .MGTZ_tab-v>.MGTZ_tab-cont {
+        right: 0;
+        top: 0;
+        width: 65.5%;
+    }
+
+    .MGTZ_tab-h>.MGTZ_tab-cont {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+    }
+
+    .MGTZ_tab-v {
+        margin-bottom: 2.2em;
+    }
+
+    .MGTZ_tabs-h {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media(max-width: 1279px) {
+
+    .MGTZ_active,
+    .MGTZ_active:hover {
+        box-shadow: 0px 5px 30px -8px rgba(0, 0, 0, 0.18), inset 0px 10px 0px #3DBEEE !important;
+    }
+
+    .MGTZ_shadow {
+        box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.25) !important;
+        position: relative;
+        z-index: 2;
+        padding: 1.45em;
+    }
+
+    .MGTZ_text {
+        width: 100%;
+    }
+
+    .MGTZ_text>p {
+        font-size: 1.15em;
+        margin-top: .6em !important;
+    }
+
+    .MGTZ_text>h2 {
+        margin-top: .6em !important;
+        font-size: 1.45em;
+        margin-bottom: 0% !important;
+    }
+
+    .MGTZ_tab-cont {
+        width: 100%;
+        position: static;
+        padding: 1.45em;
+        box-shadow: none;
+    }
+
+    .MGTZ_tab {
+        margin-bottom: 1.45em;
+        width: 100%;
+    }
+
+    .MGTZ_tabs-h>.MGTZ_tab-h:not(:first-child) {
+        margin-left: 0% !important;
+    }
+}
+
+@media(max-width: 1023px) {
+
+    .MGTZ_shadow {
+        box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.25) !important;
+    }
+
+}
